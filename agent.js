@@ -1,4 +1,4 @@
-import { writeFileSync } from "node:fs";
+
 import readline from "node:readline/promises";
 import { ChatGroq } from "@langchain/groq";
 import { createAgent } from "langchain";
@@ -87,13 +87,7 @@ async function main() {
 
   rl.close();
 
-  //to get a graph image of the agent's workflow
-  // const drawableGraphState = await agent.getGraphAsync();
-  // const graphStateImage = await drawableGraphState.drawMermaidPng();
-  // const graphStateArrayBuffer = await graphStateImage.arrayBuffer();
-
-  // const filePath = "./graphState.png";
-  // writeFileSync(filePath, new Uint8Array(graphStateArrayBuffer));
+ 
 }
 
 main();
